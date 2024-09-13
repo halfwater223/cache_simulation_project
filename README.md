@@ -96,6 +96,9 @@ Students in the **ECE 627** course are encouraged to build upon this project by 
 - **Modifying the reinforcement learning model**: Enhance the reinforcement learning algorithm by experimenting with different models.
 - **Introducing multi-task reinforcement learning**: Add support for multi-task reinforcement learning to simultaneously handle multiple objectives or scenarios within the caching system.
 
+### 5. **Energy Efficiency and System Resource Optimization**
+- **Energy consumption modeling**: Introduce a model that tracks the **computational energy** consumption of both caching and processing tasks. Explore reinforcement learning approaches that balance energy use with hit rate and latency, potentially minimizing total energy per task.
+- **Server load balancing**: Simulate environments with **heterogeneous servers** (varying processing power or available memory). Implement RL policies that optimize cache placement and task distribution to ensure balanced server loads and avoid bottlenecks.
 
 
 
