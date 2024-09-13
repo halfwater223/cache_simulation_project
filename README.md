@@ -20,7 +20,7 @@ The current code implements a linear model-based softmax policy gradient optimiz
 Here are the figures generated from running the simulation:
 
 1. **Hit Rate Over Iterations**: Shows the trend of cache hit rate over time.
-   ![Hit Rate](file-ed6nspZvrXdpMP5JcLcLcCwM)
+   ![Hit Rate](results-AveQueueTimePerTaskType.png)
 
 2. **Queue Length Over Iterations**: Displays how the length of the server queue fluctuates over time.
    ![Queue Length](file-oQ9PgvsvqcRgynUrKayv2vt3)
