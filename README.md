@@ -75,14 +75,26 @@ Run the Container:
 docker run -it cache_simulation
 ```
 
-# Expanding the Project
-Students in the ECE 627 course are encouraged to build upon this project by:
+## Expanding the Project
+Students in the **ECE 627** course are encouraged to build upon this project by exploring the following areas of optimization and extension:
 
-- Adding optimizations for queue management, such as minimizing the wait time for queued tasks.
-- Improving latency metrics.
-- Introducing more realistic task request patterns and varying computational complexities for tasks.
+### 1. **Queue and Latency Management**
+- **Optimizing queue management**: Implement strategies to minimize the wait time for queued tasks.
+- **Improving latency metrics**: Enhance latency measurements to reflect real-world systems more accurately.
+- **Introducing realistic task request patterns**: Simulate varying request patterns to more closely mimic real-world network conditions.
+- **Varying task complexities**: Incorporate tasks with different computational complexities to increase system dynamism.
 
-This code serves as a foundation for building more sophisticated and complex simulation environments tailored for specific cache and queue management challenges.
+### 2. **Network and System Scaling**
+- **Increasing client-side and server-side entities**: Simulate larger systems by scaling the number of clients and servers.
+- **Expanding the network topology**: Include multi-tier cache hierarchies or distributed networks to explore more intricate network structures.
+
+### 3. **Objective Function Optimization**
+- **Modifying and optimizing the objective function**: Adjust the objective function to optimize for other metrics, such as energy consumption, server load, or a combination of performance metrics.
+
+### 4. **Reinforcement Learning Enhancements**
+- **Optimizing the reward function**: Refine the reward function used in reinforcement learning to better align with desired system performance (e.g., balancing hit rate and queue time).
+- **Modifying the reinforcement learning model**: Enhance the reinforcement learning algorithm by experimenting with different models.
+- **Introducing multi-task reinforcement learning**: Add support for multi-task reinforcement learning to simultaneously handle multiple objectives or scenarios within the caching system.
 
 
 
