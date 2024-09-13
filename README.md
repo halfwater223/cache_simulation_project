@@ -76,7 +76,8 @@ docker run -it cache_simulation
 ```
 
 ## Expanding the Project
-Students in the **ECE 627** course are encouraged to build upon this project by exploring the following areas of optimization and extension:
+Students in the **ECE 627** course are encouraged to build upon this project by exploring one or more of the following areas of optimization and extension. You are not required to implement all of the suggested areas but can focus on those that align with your interests and course objectives.
+
 
 ### 1. **Queue and Latency Management**
 - **Optimizing queue management**: Implement strategies to minimize the wait time for queued tasks.
