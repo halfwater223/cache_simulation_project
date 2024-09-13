@@ -70,7 +70,7 @@ To use Docker, make sure Docker is installed on your machine. You can then build
 
 Build the Docker Image:
 ```bash
-docker build -t cache_simulation .
+docker build -t cache_simulation
 ```
 Run the Container:
 ```bash
