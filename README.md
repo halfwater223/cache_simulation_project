@@ -85,8 +85,5 @@ Students in the ECE 627 course are encouraged to build upon this project by:
 This code serves as a foundation for building more sophisticated and complex simulation environments tailored for specific cache and queue management challenges.
 
 
-# Contributions
-This project was developed by Yinxuan Wu and Ning Wang as a reference for students in the Network Science Lab at UMass Amherst.
-
 
 
