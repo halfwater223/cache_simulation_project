@@ -91,10 +91,16 @@ Students in the **ECE 627** course are encouraged to build upon this project by 
 ### 3. **Objective Function Optimization**
 - **Modifying and optimizing the objective function**: Adjust the objective function to optimize for other metrics, such as energy consumption, server load, or a combination of performance metrics.
 
+In real-world applications, optimizing only the cache hit rate is rarely sufficient. Often, multiple objectives like **latency**, **energy consumption**, and **server load** need to be optimized together.
+
+- **Multi-objective reinforcement learning (MORL)**: Implement a **Pareto optimization** approach to explore trade-offs between conflicting objectives. Use multi-objective policy gradient methods to balance different goals like improving hit rate, reducing latency, and minimizing energy consumption, without manually tuning weights.
+- **Normalization and scaling of objectives**: Implement automatic scaling mechanisms to normalize metrics (such as hit rate, latency, and energy consumption) to comparable ranges. This prevents one metric from dominating the others and improves overall learning stability.
+- **Adaptive or dynamic weighting**: Introduce dynamic weight adjustment in the reward function. Explore techniques like **adaptive reward shaping**, where weights are automatically adjusted during training based on the current state of each metric (e.g., giving more weight to latency when it’s high and more weight to hit rate when latency is acceptable).
+
 ### 4. **Reinforcement Learning Enhancements**
 - **Optimizing the reward function**: Refine the reward function used in reinforcement learning to better align with desired system performance (e.g., balancing hit rate and queue time).
-- **Modifying the reinforcement learning model**: Enhance the reinforcement learning algorithm by experimenting with different models.
-- **Introducing multi-task reinforcement learning**: Add support for multi-task reinforcement learning to simultaneously handle multiple objectives or scenarios within the caching system.
+- **Modifying the reinforcement learning model**: Enhance the reinforcement learning algorithm by experimenting with different models. Explore **on-policy algorithms** like **Proximal Policy Optimization (PPO)** or others and compare their effectiveness in optimizing the cache hit rate and other metrics.
+- **Introducing multi-task reinforcement learning (MTRL)**: Implement MTRL to allow the system to handle **multiple objectives** concurrently, e.g., increasing hit rate while decreasing latency and energy consumption. This can be done using approaches like **Multi-Objective Proximal Policy Optimization (MO-PPO)**.
 
 ### 5. **Energy Efficiency and System Resource Optimization**
 - **Energy consumption modeling**: Introduce a model that tracks the **computational energy** consumption of both caching and processing tasks. Explore reinforcement learning approaches that balance energy use with hit rate and latency, potentially minimizing total energy per task.
