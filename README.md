@@ -63,8 +63,10 @@ Unit tests are included to verify the behavior of the cache system. To run the t
 pytest
 ```
 
-## Docker Support
-You can also run the project inside a Docker container. Make sure Docker is installed on your machine. Build and run the container using the following commands:
+## Optional: Docker Support
+Running the project inside a Docker container is an optional step and not a necessary part of the project implementation. If you're familiar with Docker or would like to ensure the project runs in an isolated environment, you can use Docker as an alternative method to run the simulation. 
+
+To use Docker, make sure Docker is installed on your machine. You can then build and run the container using the following commands:
 
 Build the Docker Image:
 ```bash
