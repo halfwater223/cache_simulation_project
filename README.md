@@ -5,12 +5,12 @@
 
 This project provides a demo for students enrolled in the **ECE 627** (Fall 2024) course at UMass Amherst. The simulation is designed to model a caching system where multiple types of tasks are requested by users, and the system must manage a cache of limited size to optimize hit rates.
 
-The current code implements a linear model-based softmax policy gradient optimization caching problem. The system simulates task requests and dynamically adjusts the cache to maximize the **cache hit rate**. The code can be expanded upon by students to further optimize additional metrics such as **computational wait queues** and **latency**, as this current version only optimizes the cache hit rate.
+The current code implements a optimization caching problem. The system simulates task requests and dynamically adjusts the cache to maximize the **cache hit rate**. The code can be expanded upon by students to further optimize additional metrics such as **computational wait queues** and **latency**, as this current version only optimizes the cache hit rate.
 
 ### Key Features:
 - **Cache management**: Dynamically adjusts the cache to store 5 contents out of 20 types based on policy optimization.
 - **Queue management**: Simulates a server-side queue and tracks queue length over time.
-- **Policy optimization**: Uses a softmax policy gradient optimization approach with a tunable learning rate.
+- **Policy optimization**: Uses LFU and Q-table optimization approachs.
 - **Data visualization**: Generates several plots to visualize results over iterations, including cache hit rates, queue lengths, content selection frequencies, and task requests vs. hits.
 
 1. **Hit Rate Over Iterations**: Shows the trend of cache hit rate over time.
