@@ -15,23 +15,27 @@ The current code implements a linear model-based softmax policy gradient optimiz
 
 1. **Hit Rate Over Iterations**: Shows the trend of cache hit rate over time.
 
-   <img src="./results/HitRateOverIters.png" alt="Hit Rate Over Iterations" width="400"/>
+   <img src="./results/hit_rate_over_iterations.png" alt="Hit Rate Over Iterations" width="400"/>
 
 2. **Queue Length Over Iterations**: Displays how the length of the server queue fluctuates over time.
 
-   <img src="./results/QueueLengthOverIters.png" alt="Queue Length Over Iterations" width="400"/>
+   <img src="./results/queue_length_over_iterations.png" alt="Queue Length Over Iterations" width="400"/>
 
 3. **Content Selection Frequencies**: Indicates how often each type of content was selected for caching during the simulation.
 
-   <img src="./results/CacheSelectionsFreqs.png" alt="Content Selection Frequencies" width="400"/>
+   <img src="./results/content_selection_frequencies.png" alt="Content Selection Frequencies" width="400"/>
 
 4. **Total Requests vs. Total Hits**: Compares the total number of requests made for each content type against the number of successful cache hits.
 
-   <img src="./results/TotalReqsVsTotalHitsAcrossDiffCaches.png" alt="Total Requests vs Total Hits" width="400"/>
+   <img src="./results/total_requests_vs_hits.png" alt="Total Requests vs Total Hits" width="400"/>
 
 5. **Average Queue Time Per Task Type**: Shows the average time spent by each task type in the server queue.
 
-   <img src="./results/AveQueueTimePerTaskType.png" alt="Average Queue Time Per Task Type" width="400"/>
+   <img src="./results/average_queue_time_per_task_type.png" alt="Average Queue Time Per Task Type" width="400"/>
+
+6. **Hit Rates per Content Type**: Hit Rates for each content type.
+
+   <img src="./results/hit_rates_per_content_type.png" alt="Hit Rates per Content Type" width="400"/>
 
 ## How to Run the Project
 
