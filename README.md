@@ -1,11 +1,9 @@
 # Cache Simulation Project
 
-### Authors: Yinxuan Wu, Ning Wang  
-**Institution**: Network Science Lab, ECE Department, University of Massachusetts Amherst 
 
 ## Introduction
 
-This project provides a reference simulation environment for students enrolled in the **ECE 627** (Fall 2024) course at UMass Amherst. The simulation is designed to model a caching system where multiple types of tasks are requested by users, and the system must manage a cache of limited size to optimize hit rates.
+This project provides a demo for students enrolled in the **ECE 627** (Fall 2024) course at UMass Amherst. The simulation is designed to model a caching system where multiple types of tasks are requested by users, and the system must manage a cache of limited size to optimize hit rates.
 
 The current code implements a linear model-based softmax policy gradient optimization caching problem. The system simulates task requests and dynamically adjusts the cache to maximize the **cache hit rate**. The code can be expanded upon by students to further optimize additional metrics such as **computational wait queues** and **latency**, as this current version only optimizes the cache hit rate.
 
@@ -102,8 +100,8 @@ In real-world applications, optimizing only the cache hit rate is rarely suffici
 
 ### 4. **Reinforcement Learning Enhancements**
 - **Optimizing the reward function**: Refine the reward function used in reinforcement learning to better align with desired system performance (e.g., balancing hit rate and queue time).
-- **Modifying the reinforcement learning model**: Enhance the reinforcement learning algorithm by experimenting with different models. Explore **on-policy algorithms** like **Proximal Policy Optimization (PPO)** or others and compare their effectiveness in optimizing the cache hit rate and other metrics.
-- **Introducing multi-task reinforcement learning (MTRL)**: Implement MTRL to allow the system to handle **multiple objectives** concurrently, e.g., increasing hit rate while decreasing latency and energy consumption. This can be done using approaches like **Multi-Objective Proximal Policy Optimization (MO-PPO)**.
+- **Modifying the reinforcement learning model**: Enhance the reinforcement learning algorithm by experimenting with different models. You can explore other reinforcement learning algorithms and compare their effectiveness in optimizing the cache hit rate and other metrics.
+- **Introducing multi-task reinforcement learning (MTRL)**: Implement MTRL to allow the system to handle **multiple objectives** concurrently, e.g., increasing hit rate while decreasing latency and energy consumption.
 
 ### 5. **Energy Efficiency and System Resource Optimization**
 - **Energy consumption modeling**: Introduce a model that tracks the **computational energy** consumption of both caching and processing tasks. Explore reinforcement learning approaches that balance energy use with hit rate and latency, potentially minimizing total energy per task.
