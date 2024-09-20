@@ -9,10 +9,16 @@ MIT License
 Copyright (c) 2024 Yinxuan Wu, Ning Wang
 """
 
-from simulation import SimulationEnvironment
+from cache_replacement_policy import LFUCache, QLearningCache
+from simulation_environment import SimulationEnvironment
 
 if __name__ == '__main__':
+    # Initialize cache policies
+    num_types = 20
+    cache_size = 5
+    lfu_cache = LFUCache(num_types, cache_size)
+    ql_cache = QLearningCache(num_types, cache_size)
     # Initialize the simulation
-    env = SimulationEnvironment()
+    env = SimulationEnvironment(num_types=num_types, cache_size=cache_size, cache_policies=[lfu_cache, ql_cache])
     env.simulate()
     env.plot_results()
